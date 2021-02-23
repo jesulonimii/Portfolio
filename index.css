@@ -4,6 +4,10 @@
     --waveColor: #323544; 
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
 .home-main{
     flex-grow: 1;
 }
@@ -13,6 +17,7 @@
     transform: rotateX(-180deg);
     position: absolute;
     bottom: 0;
+    
     left: 0;
     width: 100%;
     
@@ -85,4 +90,12 @@
 
 .custom-list p{
     margin: 0 .5em;
+}
+
+.call-to-action .name{
+    font-family: 'Ubuntu', Poppins;
+}
+
+.call-to-action{
+
 }

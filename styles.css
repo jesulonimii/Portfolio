@@ -2,7 +2,7 @@
     --bgColor: #2f3038;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins|Ubuntu&display=swap');
 
 *, *::after, *::before{
     box-sizing: border-box;
@@ -56,9 +56,6 @@ body{
     padding: 1rem;
 }
 
-.main-nav a:hover{
-    color: #adadad;
-}
 
 .main-header{
     display: flex;
@@ -91,3 +88,24 @@ body{
     font-size: .9rem;
 }
 
+.hire-btn{
+    padding: .5rem 1rem;
+}
+
+.portfolio-btn{
+    background-color: transparent;
+    padding: .5rem .3rem;
+    margin: 0 2%;
+}
+
+.portfolio-btn a{
+    color: dodgerblue;
+}
+
+.hire-btn:hover{
+    background-color: rgba(30, 143, 255, 0.856);
+}
+
+.portfolio-btn:hover{
+    background-color: rgba(255, 255, 255, 0.199);
+}
