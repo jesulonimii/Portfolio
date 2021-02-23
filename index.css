@@ -75,7 +75,7 @@
 .custom-list{
     display: flex;
     flex-direction: row;
-    margin: .7em 0;
+    margin: 1em 0;
 }
 
 .custom-list .check-icon{
