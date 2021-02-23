@@ -1,3 +1,9 @@
+:root{
+    --themeblue: #118ad3;
+    --bgColor: #2f3038;
+    --waveColor: #323544; 
+}
+
 .home-main{
     flex-grow: 1;
 }
@@ -37,7 +43,7 @@
 
 
 .lowerboard{
-	background-color: #118ad3;
+	background-color: var(--themeblue);
 	z-index: 200;
 	position: relative;
 	min-height: 82vh;
@@ -48,7 +54,7 @@
 }
 
 .upperboard{
-	background-color: #323544;
+	background-color: var(--waveColor);
 	z-index: 200;
 	position: relative;
 	transform: rotate(-5deg);
@@ -61,6 +67,22 @@
 
 .upperboard{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.custom-list{
+    display: flex;
+    flex-direction: row;
+    margin: .7em 0;
+}
+
+.custom-list .check-icon{
+    width: 20px;
+    color: var(--themeblue);
+}
+
+.custom-list p{
+    margin: 0 .5em;
 }
