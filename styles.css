@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
 :root{
     --bgColor: #2f3038;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins|Ubuntu&display=swap');
 
 *, *::after, *::before{
     box-sizing: border-box;
@@ -50,10 +52,29 @@ body{
     list-style: none;
 }
 
+.main-nav ul li{
+    margin: 0 1em;
+}
+
 .main-nav a{
     color: inherit;
     text-decoration: none;
-    padding: 1rem;
+    font-size: .75em;
+    
+}
+
+.main-nav a::after{
+    content: "";
+    display: block;
+    height: .15em;
+    margin-top: .2em;
+    width: 0%;
+    transition: .3s;
+    background-color: var(--themeblue);
+}
+
+.main-nav a:hover::after{
+    width: 100%;
 }
 
 
@@ -88,24 +109,3 @@ body{
     font-size: .9rem;
 }
 
-.hire-btn{
-    padding: .5rem 1rem;
-}
-
-.portfolio-btn{
-    background-color: transparent;
-    padding: .5rem .3rem;
-    margin: 0 2%;
-}
-
-.portfolio-btn a{
-    color: dodgerblue;
-}
-
-.hire-btn:hover{
-    background-color: rgba(30, 143, 255, 0.856);
-}
-
-.portfolio-btn:hover{
-    background-color: rgba(255, 255, 255, 0.199);
-}

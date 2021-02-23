@@ -1,3 +1,6 @@
+@import url(fonts/fonts.css);
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 :root{
     --themeblue: #118ad3;
     --bgColor: #2f3038;
@@ -5,7 +8,6 @@
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 
 .home-main{
@@ -92,10 +94,53 @@
     margin: 0 .5em;
 }
 
-.call-to-action .name{
-    font-family: 'Ubuntu', Poppins;
-}
+
 
 .call-to-action{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 1000;
+}
 
+.call-to-action .info-title{
+    color: rgb(211, 211, 211);
+}
+
+.call-to-action .info-title::after{
+    content: "";
+    display: block;
+    height: .15em;
+    margin-top: .2em;
+    width: 15%;
+    transition: .3s;
+    background-color: var(--themeblue);
+}
+
+
+
+.call-to-action .info{
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.name{
+    font-family: Ubuntu;
+}
+
+.call-to-action a.social-icons{
+    text-decoration: none;
+    color: white;
+    margin-right: 1em;
+    font-size: 1.5em;
+}
+
+.portfolio-btn{
+    margin: 4% 0;
+    display: inline-block;
+    padding: .5em 10%;
+}
+
+.portfolio-btn:hover{
+    background-color: #12679a;
 }
