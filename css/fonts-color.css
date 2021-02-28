@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url(fonts/fonts.css);
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root{
+    --themeblue: #118ad3;
+    --bgColor: #2f3038;
+    --waveColor: #323544; 
+}

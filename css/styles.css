@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-
-:root{
-    --bgColor: #2f3038;
-}
+@import url(fonts-color.css);
 
 
 *, *::after, *::before{
@@ -102,6 +97,7 @@ body{
 
 [class*="-btn"]{
     color: var(--white);
+    outline: none;
     background-color: dodgerblue;
     padding: .75rem 1.5rem;
     border-radius: .5rem;
