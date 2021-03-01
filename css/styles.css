@@ -5,6 +5,32 @@
     box-sizing: border-box;
 }
 
+/*customize scrollbar*/
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--waveColor);
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--themeblue);
+    border-radius: 1em;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/*customize scrollbar end*/
+
 
 body{
     padding: 0;
@@ -25,6 +51,12 @@ body{
     max-width: 95%;
     margin: 0 auto;
     padding: 0 40px;
+}
+
+header{
+    position: sticky;
+    background: var(--bgColor);
+    top: 0;
 }
 
 .brand-logo{
@@ -105,8 +137,14 @@ body{
     font-size: .9rem;
 }
 
-
-.main-nav a.nav-portfolio{
-    cursor: not-allowed;
-    color: gray;
+.back-to-top-btn{
+    border: 0px;
+    border-radius: 100%;
+    padding: 1em;
+    float: right;
+    display: none;
+    transition: 2s;
+    position: sticky;
+    bottom: 10px;
+    right: 10px;
 }
