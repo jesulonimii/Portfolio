@@ -10,7 +10,7 @@ window.onscroll = function() {scrollFunction()};
 
 //show back to top button
 function scrollFunction() {
-  if (document.documentElement.scrollTop > 30) {
+  if (document.documentElement.scrollTop > 300) {
     btTopButton.style.display = "block";
   } else {
     btTopButton.style.display = "none";
