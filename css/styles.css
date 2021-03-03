@@ -152,6 +152,23 @@ header{
     animation: fade-up 0.5s ease;
 }
 
+footer{
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+    color: gray;
+    font-size: .8em;
+}
+
+footer > hr{
+    width: 95%;
+    display: block;
+    border-color: rgba(128, 128, 128, 0.562);
+    margin: auto;
+    margin-bottom: 2em;
+    
+}
+
 
 /*back to top button animation*/
 

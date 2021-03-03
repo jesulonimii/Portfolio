@@ -2,6 +2,31 @@
 @import url(fonts-color.css);
 
 
+.container .page-name{
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.container .page-name:after{
+    content: "";
+    display: block;
+    text-align: center;
+    height: .15em;
+    width: 5%;
+    margin: .4em auto;
+    transition: .3s;
+    background-color: var(--themeblue);
+}
+
+
+.container .page-description{
+    color: #d3d3d3;
+    text-align: center;
+}
+
+
 
 #filter-btn-group{
     text-align: center;
@@ -65,3 +90,14 @@
     color: rgb(228, 228, 228);
 }
 
+
+
+@media screen and (max-width: 900px){
+
+    .container .page-name:after{
+        width: 20%;
+    }
+    
+
+
+}
