@@ -26,6 +26,8 @@ body{
 
 .nav-phone-bar{
 	display: block;
+    position: sticky;
+    top: 70px;
 	transition: 0.5s;
 	max-height: 0vh;
 	text-align: center;
