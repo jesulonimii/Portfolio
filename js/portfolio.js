@@ -120,3 +120,5 @@ function removeActiveStylingFromBtn() {
     androidFilterBtn.classList.remove("active");
     
 }
+
+

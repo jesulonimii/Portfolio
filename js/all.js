@@ -31,3 +31,24 @@ function backToTop() {
 
 
 // handling scroll to top button end ***
+
+
+//handle phone nav button
+function showNavPhone() {
+
+  var navPhoneBar = document.querySelector(".nav-phone-bar");
+
+  var checkBarDisplay = getComputedStyle(navPhoneBar).maxHeight;
+
+
+  switch (checkBarDisplay){
+
+    case "0px":
+      navPhoneBar.style.maxHeight = "162px"
+      break;
+    case "162px":
+      navPhoneBar.style.maxHeight = "0px"
+      break;
+  }
+
+}

@@ -1,3 +1,5 @@
+@import url(fonts-color.css);
+
 .container{
     max-width: 95%;
     margin: 0 auto;
@@ -10,6 +12,53 @@ body{
 
 .brand-logo-name{
     font-size: .85em;
+}
+
+.main-nav ul{
+    display: none;
+}
+
+.main-nav i{
+	display: block;
+    color: var(--themeblue);
+    font-size: 1.5em;
+}
+
+.nav-phone-bar{
+	display: block;
+	transition: 0.5s;
+	max-height: 0vh;
+	text-align: center;
+	margin-bottom: 2vh;
+	overflow: hidden;
+	background-color: var(--themeblue);
+}
+
+
+.nav-phone-bar ul{
+	display: block;
+	justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-phone-bar ul li{
+    margin: 0;
+    padding: .5em 0;
+}
+
+.nav-phone-bar ul li:hover{
+    background-color: var(--waveColor);
+}
+
+
+
+.nav-phone-bar a{
+    color: inherit;
+    text-decoration: none;
+    font-size: .75em;
+    
 }
 
 
