@@ -134,11 +134,26 @@
     background-color: var(--themeblue);
     margin: 4% 0;
     display: inline-block;
-    padding: .5em 10%;
+    padding: 10px 40px;
 }
 
 .portfolio-btn:hover{
     background-color: #12679a;
+}
+
+.cv-btn{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--themeblue);
+    color: var(--themeblue);
+    margin: 4% 0;
+    display: inline-block;
+    padding: 9px 30px;
+}
+
+.cv-btn:hover{
+    background-color: var(--themeblue);
+    color: white;
 }
 
 
