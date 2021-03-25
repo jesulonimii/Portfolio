@@ -152,7 +152,9 @@
 }
 
 .cv-btn:hover{
-    background-color: var(--themeblue);
+    background-color: #12679a;
+    border: 1px solid #12679a;
+    transition: 0.25s;
     color: white;
 }
 
