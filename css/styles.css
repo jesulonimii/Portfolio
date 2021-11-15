@@ -62,6 +62,11 @@ header{
     top: 0;
 }
 
+.faceLogo{
+    border-radius: 100%;
+    width: 3.5vw;
+}
+
 .brand-logo{
     display: flex;
     align-items: center;
