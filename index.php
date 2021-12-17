@@ -25,7 +25,7 @@
     <meta name="twitter:site" content="@jesulonimii">
     <meta name="twitter:creator" content="Jesulonimi">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description" content="Jesulonimi William | full-stack developer | logo designer">
+    <meta name="twitter:description" content="Jesulonimi William | full-stack developer | designer">
     <meta name="twitter:title" content="Jesulonimii's WebSpace">
     <meta name="twitter:image" content="https://jesulonimii.me/images/og-image.png">
 
@@ -91,7 +91,7 @@
                         <a class="social-icons" href="https://twitter.com/jesulonimii" target="_blank"><i class="fa fa-twitter"></i></a>
                         <a class="social-icons" href="https://instagram.com/jesulonimii" target="_blank"><i class="fa fa-instagram"></i></a>
                         <a class="social-icons" href="https://github.com/jesulonimii" target="_blank"><i class="fa fa-github"></i></a>
-                        <a class="social-icons" href="https://linkedin.com/ln/jesulonimii" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a class="social-icons" href="https://linkedin.com/in/jesulonimii" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </div>
                     <a href="portfolio" class="portfolio-btn">Portfolio</a>
                     <a href="assets/resume.pdf" class="cv-btn" download="jesulonimii's cv">Download CV</a>
