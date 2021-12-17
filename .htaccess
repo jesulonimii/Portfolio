@@ -16,3 +16,8 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 
 
 RewriteRule ^(.*)$ $1.html [NC,L]
+
+Redirect https://jesulonimii.me/index.html https://jesulonimii.me/
+
+RewriteCond %{HTTP_HOST} ^www.jesulonimii.me
+RewriteRule (.*) https://jesulonimii.me/$1 [R=301,L]
