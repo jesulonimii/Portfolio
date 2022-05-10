@@ -3,6 +3,7 @@ const app = express();
 var path = require('path');
 const bodyParser = require('body-parser'); // middlewareconst url = require('url'); //for parsing url
 const fs = require('fs'); //file system
+const cyphr =  require(path.resolve('public/data/cyphr-ad-data')); 
 
 const router = express.Router();
 const serverless = require('serverless-http');
@@ -86,7 +87,7 @@ app.get('/api/cyphr/adverts', (req, res) => {
 
 	}
 	else{
-		res.status(400).send({"error":"parameter 'for' missing in request's body"})
+		res.status(400).end({"error":"parameter 'for' missing in request's body"})
 	}
 
 	res.end()
@@ -95,36 +96,20 @@ app.get('/api/cyphr/adverts', (req, res) => {
 
 app.post('/api/cyphr/adverts', (req, res) => {
 
-	var jsonContent = [];
+	var jsonContent = {};
 
 
-	if (req.body.for == "slides") {
+	if (req.body.for != "slides") {
 
-		const responseData = [
-			{
-				content: "Aprihive: Best student marketing platform.",
-        		image:"https://scontent.flos1-1.fna.fbcdn.net/v/t39.30808-6/248403505_100349235792049_1906537986642622320_n.jpg?_nc_cat=111&ccb=1-6&_nc_sid=8bfeb9&_nc_eui2=AeHrwSFBpGEovlFLaMLADPumyc8o7f7tocHJzyjt_u2hwajm5fkeQU5YLvzcISqlM240DCJoT5UrVBfiPG8NdMKN&_nc_ohc=fvzhM4gaj5sAX_tbLZn&_nc_zt=23&_nc_ht=scontent.flos1-1.fna&oh=00_AT_tFmPamIXg1i1w2ZWShrL1Tx1nuudU-cpT7WxkGTpDhQ&oe=627A986E",
-        		action: "Download",
-        		link: "https://www.aprihive.com/download",
-        		status: "ok"
-        	},
-        	{
-    			content: "Jesulonimii William, Founder Aprihive",
-        		image:"https://avatars.githubusercontent.com/u/70331030?v=4",
-        		action: "Visit",
-        		link: "https://www.aprihive.com/user/Jesulonimii",
-        		status: "ok"
-        	}
-        ]
+		const responseData = cyphr.data;
 
         jsonContent = JSON.stringify(responseData);
 		res.status(200).end(jsonContent)
-
-
 	}
 	else{
-		res.status(200).end([{"error":"parameter 'for' missing in request's body"}])
+		res.status(400).end({"error":"parameter 'for' missing in request's body"})
 	}
+
 
 	res.end()
 
