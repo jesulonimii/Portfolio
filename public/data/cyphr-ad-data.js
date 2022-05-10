@@ -7,10 +7,10 @@ const responseData = [
     	status: "ok"
     },
     {
-    	content: "Jesulonimii William, Founder Aprihive",
-    	image:"https://avatars.githubusercontent.com/u/70331030?v=4",
+    	content: "Contact Jesulonimii for your animation video ads.",
+    	image:"https://firebasestorage.googleapis.com/v0/b/aprihive-app.appspot.com/o/posts-images%2Fjesulonimii_895503_postImage.jpg?alt=media&token=1c41e63d-41da-4fd0-8494-082042680598",
     	action: "Visit",
-    	link: "https://www.aprihive.com/user/Jesulonimii",
+    	link: "https://www.twitter.com/Jesulonimii",
     	status: "ok"
 	},
     {
